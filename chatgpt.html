@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ibnu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .profile {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile img {
+            width: 100px;
+            border-radius: 50%;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #0073e6;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="profile.jpg" alt="Foto Profil">
+        <h2 id="name">Nama Kamu</h2>
+        <p id="bio">Halo! Saya aktif di beberapa platform sosial media. Yuk, ikuti saya!</p>
+        <div class="social-links">
+            <a href="#" id="instagram" target="_blank">Instagram</a>
+            <a href="#" id="twitter" target="_blank">Twitter</a>
+            <a href="#" id="youtube" target="_blank">YouTube</a>
+        </div>
+    </div>
+    
+    <script>
+        const socialMedia = {
+            name: "ibnu syafiq",
+            bio: "Halo! Saya seorang pelajar pgri 117, ikuti saya untuk update terbaru!",
+            instagram: "https://instagram.com/inuszm",
+            twitter: "https://twitter.com/username",
+            youtube: "https://youtube.com/c/username"
+        };
+        
+        document.getElementById("name").innerText = socialMedia.name;
+        document.getElementById("bio").innerText = socialMedia.bio;
+        document.getElementById("instagram").href = socialMedia.instagram;
+        document.getElementById("twitter").href = socialMedia.twitter;
+        document.getElementById("youtube").href = socialMedia.youtube;
+    </script>
+</body>
+</html>
